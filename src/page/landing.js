@@ -12,7 +12,7 @@ export default class Landing extends Component {
         {({ setPilih }) => (
           <div>
             <Header as='h1' textAlign='center'>
-              Open Tender Ketua Pelaksana
+              Open Tender Ketua Pelaksana Hology 2.0
         </Header>
             <section id="Steps" class="steps-section">
               {/*start timeline*/}
@@ -25,7 +25,7 @@ export default class Landing extends Component {
                 <div class="steps-one">
                   <img class="steps-img" src="http://placehold.it/50/3498DB/FFFFFF" alt="" />
                   <h3 class="steps-name">
-                    24 - 28 Februari 2019
+                    25 Februari - 1 Maret 2019
             </h3>
                   <p class="steps-description">
                     Pendaftaran Online
@@ -35,17 +35,17 @@ export default class Landing extends Component {
                 <div class="steps-two">
                   <img class="steps-img" src="http://placehold.it/50/3498DB/FFFFFF" alt="" />
                   <h3 class="steps-name">
-                    26 Februari 2019 - 1 Maret 2019
+                  28 Februari - 3 Maret 2019
             </h3>
                   <p class="steps-description">
-                    Pengembalian Berkas
+                    Pengumpulan Power Point
             </p>
                 </div>
 
                 <div class="steps-three">
                   <img class="steps-img" src="http://placehold.it/50/3498DB/FFFFFF" alt="" />
                   <h3 class="steps-name">
-                    4 Maret 2019
+                    4 - 6 Maret 2019
             </h3>
                   <p class="steps-description">
                     Fit and Proper Test
@@ -60,16 +60,16 @@ export default class Landing extends Component {
             <div className="ui middle aligned center aligned grid container">
               <Card.Group>
                 <Card>
-                  <Image src='./img/pk2.jpg' />
+                  <Image src='./img/pk2.png' />
                   <Card.Content>
-                    <Card.Header>PK2MABA FILKOM</Card.Header>
+                    <Card.Header>Hology 2.0</Card.Header>
                     <Card.Meta>2019</Card.Meta>
-                    <Card.Description>Merupakan rangkaian kegiatan yang bertujuan untuk menyambut dan memperkenalkan kehidupan kampus dengan menanamkan budaya dan nilai-nilai dasar sebagai mahasiswa Filkom aktif kepada mahasiswa baru yang berkolaborasi dengan pihak dekanat Filkom.</Card.Description>
+                    <Card.Description>HOLOGY 2.0 adalah sebuah kegiatan yang menggabungkan konsep festival dan kompetisi Teknologi Informasi dan Komunikasi. </Card.Description>
                   </Card.Content>
                   <Card.Content extra>
 
                     <Button animated='fade' color="blue" onClick={()=>{
-                      setPilih("PK2 Maba");
+                      setPilih("Hology");
                       this.props.history.replace('/login')
                     }
                     }>
@@ -78,24 +78,6 @@ export default class Landing extends Component {
                     </Button>
                   </Card.Content>
 
-                </Card>
-                <Card>
-                  <Image src='./img/filafest.jpg' />
-                  <Card.Content>
-                    <Card.Header>Diesnatalis FILKOM</Card.Header>
-                    <Card.Meta>2019</Card.Meta>
-                    <Card.Description>Diesnatalis Fakultas Ilmu Komputer yang bertujuan sebagai perayaan ulang tahun Fakultas Ilmu Komputer ke 8 Tahun yang dimana pelaksanaannya akan melibatkan panitia mahasiswa yang dibawahi oleh Kementerian Pengembangan Sumber Daya Mahasiswa</Card.Description>
-                  </Card.Content>
-                  <Card.Content extra>
-
-                    <Button animated='fade' color="blue" onClick={async ()=>{
-                      await setPilih("Filafest")
-                      this.props.history.replace('/login')
-                      }}>
-                      <Button.Content visible>Daftar Ketua Pelaksana</Button.Content>
-                      <Button.Content hidden>Login</Button.Content>
-                    </Button>
-                  </Card.Content>
                 </Card>
               </Card.Group>
             </div>

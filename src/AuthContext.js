@@ -35,10 +35,8 @@ class AuthProvider extends React.Component {
     }
     setPilih(ad) {
         this.setState({ pilih: ad })
-        if (ad === "PK2 Maba") {
-            this.setState({ link: "https://drive.google.com/file/d/1n2NA27bBNV22N66VB-ihsZ-w4IxdfnMf/view?usp=sharing" })
-        } else {
-            this.setState({ link: "https://drive.google.com/file/d/1UCjOZbMGsEwj4xEm1M54Dqhk4aUNifDl/view?usp=sharing" })
+        if (ad === "Hology") {
+            this.setState({ link: "https://drive.google.com/drive/folders/1YGwpabO7gbHb_ZUBhFt_x0dJ4USjOczO?usp=sharing" })
         }
         console.log(this.state)
     }

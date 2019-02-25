@@ -19,6 +19,7 @@ export default class FormPendaftaran extends Component {
             nama: '',
             prodi: '',
             line: '',
+            noTelp: '',
             pilih: '',
             motivasi: '',
             loading: false
@@ -36,6 +37,7 @@ export default class FormPendaftaran extends Component {
             "prodi": prodi,
             "pilihan": pilih,
             "idline": this.state.line,
+            "noTelp": this.state.noTelp,
             "motivasi": this.state.motivasi
         }
         console.log(body)
@@ -73,10 +75,11 @@ export default class FormPendaftaran extends Component {
                 
                 <Form>
                     
-                <Form.Input fluid label='Nim' placeholder='First name' value={nim} readOnly  />
-                <Form.Input fluid label='Nama' placeholder='First name' value={nama} readOnly />
-                <Form.Input fluid label='Program Studi' placeholder='Gender' value={prodi} readOnly  />
+                <Form.Input fluid label='Nim' required placeholder='First name' value={nim} readOnly  />
+                <Form.Input fluid label='Nama' required placeholder='First name' value={nama} readOnly />
+                <Form.Input fluid label='Program Studi' required placeholder='Gender' value={prodi} readOnly  />
                 <Form.Input fluid label='Id Line' required placeholder='Id Line'  onChange={val => this.setState({ line: val.target.value })} />
+                <Form.Input fluid label='noTelp' required placeholder='noTelp'  onChange={val => this.setState({ noTelp: val.target.value })} />
                 <Form.Input fluid label='Pilihan' placeholder='Pilihan' value={pilih} readOnly  />
                 <Form.TextArea label='Motivasi' required placeholder='Tell us more about you...' onChange={val => this.setState({ motivasi: val.target.value })} />
                 {this.state.loading === false && <Button color="blue" fluid onClick={()=>{
